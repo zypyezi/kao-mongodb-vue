@@ -1,0 +1,15 @@
+2019-03-12T10:46:37.626+0800 I CONTROL  [main] Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'
+2019-03-12T10:46:37.669+0800 I CONTROL  [initandlisten] MongoDB starting : pid=1391 port=27017 dbpath=../data.db 64-bit host=zhangxiepeideMacBook-Pro.local
+2019-03-12T10:46:37.669+0800 I CONTROL  [initandlisten] db version v4.0.6
+2019-03-12T10:46:37.669+0800 I CONTROL  [initandlisten] git version: caa42a1f75a56c7643d0b68d3880444375ec42e3
+2019-03-12T10:46:37.669+0800 I CONTROL  [initandlisten] allocator: system
+2019-03-12T10:46:37.669+0800 I CONTROL  [initandlisten] modules: none
+2019-03-12T10:46:37.669+0800 I CONTROL  [initandlisten] build environment:
+2019-03-12T10:46:37.669+0800 I CONTROL  [initandlisten]     distarch: x86_64
+2019-03-12T10:46:37.669+0800 I CONTROL  [initandlisten]     target_arch: x86_64
+2019-03-12T10:46:37.669+0800 I CONTROL  [initandlisten] options: { config: "../mongod.cfg", net: { bindIp: "127.0.0.1", port: 27017 }, storage: { dbPath: "../data.db" }, systemLog: { destination: "file", path: "../data/log/mongodb.log" } }
+2019-03-12T10:46:37.674+0800 I STORAGE  [initandlisten] exception in initAndListen: NonExistentPath: Data directory ../data.db not found., terminating
+2019-03-12T10:46:37.674+0800 I NETWORK  [initandlisten] shutdown: going to close listening sockets...
+2019-03-12T10:46:37.674+0800 I NETWORK  [initandlisten] removing socket file: /tmp/mongodb-27017.sock
+2019-03-12T10:46:37.675+0800 I CONTROL  [initandlisten] now exiting
+2019-03-12T10:46:37.675+0800 I CONTROL  [initandlisten] shutting down with code:100

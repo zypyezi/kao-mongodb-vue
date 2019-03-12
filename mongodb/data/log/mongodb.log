@@ -1,0 +1,45 @@
+2019-03-12T10:51:16.672+0800 I CONTROL  [main] Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'
+2019-03-12T10:51:16.720+0800 I CONTROL  [initandlisten] MongoDB starting : pid=1411 port=27017 dbpath=../data/db 64-bit host=zhangxiepeideMacBook-Pro.local
+2019-03-12T10:51:16.720+0800 I CONTROL  [initandlisten] db version v4.0.6
+2019-03-12T10:51:16.720+0800 I CONTROL  [initandlisten] git version: caa42a1f75a56c7643d0b68d3880444375ec42e3
+2019-03-12T10:51:16.720+0800 I CONTROL  [initandlisten] allocator: system
+2019-03-12T10:51:16.720+0800 I CONTROL  [initandlisten] modules: none
+2019-03-12T10:51:16.720+0800 I CONTROL  [initandlisten] build environment:
+2019-03-12T10:51:16.720+0800 I CONTROL  [initandlisten]     distarch: x86_64
+2019-03-12T10:51:16.720+0800 I CONTROL  [initandlisten]     target_arch: x86_64
+2019-03-12T10:51:16.720+0800 I CONTROL  [initandlisten] options: { config: "../mongod.cfg", net: { bindIp: "127.0.0.1", port: 27017 }, storage: { dbPath: "../data/db" }, systemLog: { destination: "file", path: "../data/log/mongodb.log" } }
+2019-03-12T10:51:16.723+0800 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3584M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2019-03-12T10:51:17.235+0800 I STORAGE  [initandlisten] WiredTiger message [1552359077:235246][1411:0x7fff8cc18380], txn-recover: Set global recovery timestamp: 0
+2019-03-12T10:51:17.282+0800 I RECOVERY [initandlisten] WiredTiger recoveryTimestamp. Ts: Timestamp(0, 0)
+2019-03-12T10:51:17.325+0800 I CONTROL  [initandlisten] 
+2019-03-12T10:51:17.325+0800 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2019-03-12T10:51:17.325+0800 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2019-03-12T10:51:17.325+0800 I CONTROL  [initandlisten] 
+2019-03-12T10:51:17.325+0800 I CONTROL  [initandlisten] 
+2019-03-12T10:51:17.325+0800 I CONTROL  [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+2019-03-12T10:51:17.336+0800 I STORAGE  [initandlisten] createCollection: admin.system.version with provided UUID: 5822fcb9-4450-4bf8-ad69-c4f9417a41da
+2019-03-12T10:51:17.369+0800 I COMMAND  [initandlisten] setting featureCompatibilityVersion to 4.0
+2019-03-12T10:51:17.378+0800 I STORAGE  [initandlisten] createCollection: local.startup_log with generated UUID: 086e06e7-4d84-4dcb-a249-dcee27f7ccf8
+2019-03-12T10:51:17.415+0800 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '../data/db/diagnostic.data'
+2019-03-12T10:51:17.421+0800 I NETWORK  [initandlisten] waiting for connections on port 27017
+2019-03-12T10:51:17.425+0800 I STORAGE  [LogicalSessionCacheRefresh] createCollection: config.system.sessions with generated UUID: cd8e5a5a-8d8e-4238-a435-3da87a22a842
+2019-03-12T10:51:17.470+0800 I INDEX    [LogicalSessionCacheRefresh] build index on: config.system.sessions properties: { v: 2, key: { lastUse: 1 }, name: "lsidTTLIndex", ns: "config.system.sessions", expireAfterSeconds: 1800 }
+2019-03-12T10:51:17.471+0800 I INDEX    [LogicalSessionCacheRefresh] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2019-03-12T10:51:17.478+0800 I INDEX    [LogicalSessionCacheRefresh] build index done.  scanned 0 total records. 0 secs
+2019-03-12T10:51:28.872+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:60835 #1 (1 connection now open)
+2019-03-12T10:51:28.876+0800 I NETWORK  [conn1] received client metadata from 127.0.0.1:60835 conn1: { driver: { name: "nodejs", version: "2.2.36" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.7.0" }, platform: "Node.js v10.13.0, LE, mongodb-core: 2.1.20" }
+2019-03-12T10:51:34.786+0800 I STORAGE  [conn1] createCollection: zyp.col2 with generated UUID: da3b29f7-2a10-40b8-b8b7-3d293e22a3f9
+2019-03-12T10:51:34.792+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:60867 #2 (2 connections now open)
+2019-03-12T10:51:59.719+0800 I NETWORK  [conn1] end connection 127.0.0.1:60835 (1 connection now open)
+2019-03-12T10:51:59.719+0800 I NETWORK  [conn2] end connection 127.0.0.1:60867 (0 connections now open)
+2019-03-12T10:52:08.925+0800 I CONTROL  [signalProcessingThread] got signal 2 (Interrupt: 2), will terminate after current cmd ends
+2019-03-12T10:52:08.925+0800 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2019-03-12T10:52:08.925+0800 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-27017.sock
+2019-03-12T10:52:08.926+0800 I CONTROL  [signalProcessingThread] Shutting down free monitoring
+2019-03-12T10:52:08.926+0800 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2019-03-12T10:52:08.929+0800 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2019-03-12T10:52:08.937+0800 I STORAGE  [signalProcessingThread] Shutting down session sweeper thread
+2019-03-12T10:52:08.938+0800 I STORAGE  [signalProcessingThread] Finished shutting down session sweeper thread
+2019-03-12T10:52:09.090+0800 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2019-03-12T10:52:09.091+0800 I CONTROL  [signalProcessingThread] now exiting
+2019-03-12T10:52:09.091+0800 I CONTROL  [signalProcessingThread] shutting down with code:0

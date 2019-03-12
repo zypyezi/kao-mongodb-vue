@@ -1,0 +1,39 @@
+2019-03-11T16:36:08.508+0800 I CONTROL  [main] Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'
+2019-03-11T16:36:08.522+0800 I CONTROL  [initandlisten] MongoDB starting : pid=2311 port=27017 dbpath=/Users/yezi/Documents/mongodb/bin/../data 64-bit host=zhangxiepeideMacBook-Pro.local
+2019-03-11T16:36:08.522+0800 I CONTROL  [initandlisten] db version v4.0.6
+2019-03-11T16:36:08.522+0800 I CONTROL  [initandlisten] git version: caa42a1f75a56c7643d0b68d3880444375ec42e3
+2019-03-11T16:36:08.523+0800 I CONTROL  [initandlisten] allocator: system
+2019-03-11T16:36:08.523+0800 I CONTROL  [initandlisten] modules: none
+2019-03-11T16:36:08.523+0800 I CONTROL  [initandlisten] build environment:
+2019-03-11T16:36:08.523+0800 I CONTROL  [initandlisten]     distarch: x86_64
+2019-03-11T16:36:08.524+0800 I CONTROL  [initandlisten]     target_arch: x86_64
+2019-03-11T16:36:08.524+0800 I CONTROL  [initandlisten] options: { processManagement: { fork: true }, storage: { dbPath: "../data" }, systemLog: { destination: "file", logAppend: true, path: "../mongodb.log" } }
+2019-03-11T16:36:08.525+0800 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3584M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2019-03-11T16:36:09.010+0800 I STORAGE  [initandlisten] WiredTiger message [1552293369:10956][2311:0x7fff93bff380], txn-recover: Set global recovery timestamp: 0
+2019-03-11T16:36:09.043+0800 I RECOVERY [initandlisten] WiredTiger recoveryTimestamp. Ts: Timestamp(0, 0)
+2019-03-11T16:36:09.094+0800 I CONTROL  [initandlisten] 
+2019-03-11T16:36:09.094+0800 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2019-03-11T16:36:09.095+0800 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2019-03-11T16:36:09.095+0800 I CONTROL  [initandlisten] 
+2019-03-11T16:36:09.096+0800 I CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
+2019-03-11T16:36:09.096+0800 I CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server. 
+2019-03-11T16:36:09.097+0800 I CONTROL  [initandlisten] **          Start the server with --bind_ip <address> to specify which IP 
+2019-03-11T16:36:09.097+0800 I CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
+2019-03-11T16:36:09.098+0800 I CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
+2019-03-11T16:36:09.098+0800 I CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
+2019-03-11T16:36:09.099+0800 I CONTROL  [initandlisten] 
+2019-03-11T16:36:09.099+0800 I CONTROL  [initandlisten] 
+2019-03-11T16:36:09.100+0800 I CONTROL  [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+2019-03-11T16:36:09.112+0800 I STORAGE  [initandlisten] createCollection: admin.system.version with provided UUID: 725d3b52-4c1e-408a-9aef-79c8e467da4c
+2019-03-11T16:36:09.148+0800 I COMMAND  [initandlisten] setting featureCompatibilityVersion to 4.0
+2019-03-11T16:36:09.155+0800 I STORAGE  [initandlisten] createCollection: local.startup_log with generated UUID: ab81aa52-516e-4bd2-ad93-a5ccf7b91e0e
+2019-03-11T16:36:09.187+0800 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/Users/yezi/Documents/mongodb/bin/../data/diagnostic.data'
+2019-03-11T16:36:09.195+0800 I NETWORK  [initandlisten] waiting for connections on port 27017
+2019-03-11T16:36:09.197+0800 I STORAGE  [LogicalSessionCacheRefresh] createCollection: config.system.sessions with generated UUID: 2866b87d-735d-4a6a-a9fa-af42c953f894
+2019-03-11T16:36:09.242+0800 I INDEX    [LogicalSessionCacheRefresh] build index on: config.system.sessions properties: { v: 2, key: { lastUse: 1 }, name: "lsidTTLIndex", ns: "config.system.sessions", expireAfterSeconds: 1800 }
+2019-03-11T16:36:09.243+0800 I INDEX    [LogicalSessionCacheRefresh] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2019-03-11T16:36:09.251+0800 I INDEX    [LogicalSessionCacheRefresh] build index done.  scanned 0 total records. 0 secs
+2019-03-11T16:41:33.971+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:62948 #1 (1 connection now open)
+2019-03-11T16:42:00.361+0800 I NETWORK  [conn1] end connection 127.0.0.1:62948 (0 connections now open)
+2019-03-11T16:43:30.074+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:63481 #2 (1 connection now open)
+2019-03-11T16:44:29.626+0800 I NETWORK  [conn2] end connection 127.0.0.1:63481 (0 connections now open)
